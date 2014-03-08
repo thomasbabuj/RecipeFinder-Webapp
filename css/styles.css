@@ -21,6 +21,10 @@ h2 {
 
 }
 
+body {
+	background: #cab5a3 url(../images/bg-main.gif) repeat repeat 0 0;
+}
+
 body > header {
 
 }
@@ -112,6 +116,7 @@ nav {
  			.media img {
  				float:left;
  				margin-right: 30px;
+ 				border: solid 9px #ede0d5; 				
  			} 			
 
  	.sidebar {
