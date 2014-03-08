@@ -21,11 +21,16 @@ h2 {
 
 }
 
-body {
-	background: #cab5a3 url(../images/bg-main.gif) repeat repeat 0 0;
-}
+
 
 body > header {
+	box-shadow: rgba(0,0,0, .25) 0 10px 2px 0;
+	position: relative;
+	z-index: 10;
+}
+
+body {
+	background: #cab5a3 url(../images/bg-main.gif) repeat repeat 0 0;
 
 }
 
@@ -33,9 +38,6 @@ body > header {
 
 	}
 
- .promo {
-
- }
 
  .cf:before,
  .cf:after {
@@ -87,12 +89,25 @@ nav {
 .promo {
 	position: relative;
 	z-index: 5;
+	padding-bottom: 8px;
+	box-shadow: rgba(0,0,0, .25) 0 3px 2px 0;
+
 }
 
 	.promo-desc {
 		position: absolute;
 		bottom: 93px;
 		right: 75px;
+		width: 316px;
+	}
+
+	.promo-btn {
+		display: inline-block;
+		width: 208px;
+		padding: 13px 0;
+		background-color: #6c0733;
+		box-shadow: rgba(0, 0, 0, .25) 0 7px 2px 0;
+
 	}		
 
  .main {
@@ -104,6 +119,7 @@ nav {
  		width: 640px;
  		float: left;
  		padding: 0 40px;
+ 		background: url(../images/bg-column.png) no-repeat top right;
  	}
 
  		.media {
@@ -113,10 +129,18 @@ nav {
 
  		}
 
+ 		.more-btn {
+ 			text-align: center;
+ 			float:right;
+ 			margin-right: 50px;
+ 			width: 280px;
+ 		}
+
  			.media img {
  				float:left;
  				margin-right: 30px;
- 				border: solid 9px #ede0d5; 				
+ 				border: solid 9px #ede0d5; 	
+ 				box-shadow: rgba(0,0,0, .25) 2px 2px 2px 0;			
  			} 			
 
  	.sidebar {
@@ -157,6 +181,9 @@ nav {
 
 
  footer {
+ 	
+ 	background-color : rgb(66, 3, 30);
+ 	float: left;
 
  }
  	.footer-inside
